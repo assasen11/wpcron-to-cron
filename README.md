@@ -9,7 +9,7 @@ This script disables WP-Cron in WordPress installations and sets up Linux cron j
 ## Usage
 
 ```bash
-./wpcron-to-cron1.sh [OPTION] [-y]
+./wpcron-to-cron.sh [OPTION] [-y]
 ```
 
 ## Options
@@ -36,27 +36,27 @@ This script disables WP-Cron in WordPress installations and sets up Linux cron j
 
 - Apply cron job changes to all users:
   ```bash
-  ./wpcron-to-cron1.sh --all
+  ./wpcron-to-cron.sh --all
   ```
 
 - Apply cron job changes to a specific user:
   ```bash
-  ./wpcron-to-cron1.sh --user username
+  ./wpcron-to-cron.sh --user username
   ```
 
 - Apply cron job changes to all WordPress sites, staggered at 5 sites per minute:
   ```bash
-  ./wpcron-to-cron1.sh --all-spaced
+  ./wpcron-to-cron.sh --all-spaced
   ```
 
 - Revert changes by re-enabling WP-Cron and removing cron jobs:
   ```bash
-  ./wpcron-to-cron1.sh --revert
+  ./wpcron-to-cron.sh --revert
   ```
 
 - Apply cron jobs without any confirmations:
   ```bash
-  ./wpcron-to-cron1.sh --all -y
+  ./wpcron-to-cron.sh --all -y
   ```
 
 ---
